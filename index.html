@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        
+        <header class="header">
+            <div>
+                <h1>Student Registration</h1>
+                <p>Enter the student's information below</p>
+            </div>
+
+            <div class="student-icon">
+                🎓
+            </div>
+        </header>
+
+
+       
+        <form id="studentForm">
+
+            
+            <section class="form-section">
+
+                <div class="section-title">
+                    <span>01</span>
+                    <div>
+                        <h2>Personal Information</h2>
+                        <p>Basic information about the student</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="firstName">
+                            First Name <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            placeholder="Enter first name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="lastName">
+                            Last Name <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            placeholder="Enter last name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="dob">
+                            Date of Birth <span>*</span>
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Gender <span>*</span></label>
+
+                        <div class="radio-group">
+
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="Male" required>
+                                Male
+                            </label>
+
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="Female">
+                                Female
+                            </label>
+
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="Other">
+                                Other
+                            </label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Contact Information -->
+            <section class="form-section">
+
+                <div class="section-title">
+                    <span>02</span>
+
+                    <div>
+                        <h2>Contact Information</h2>
+                        <p>How we can contact the student</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address <span>*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="student@example.com"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">
+                            Phone Number <span>*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="10 digit mobile number"
+                            maxlength="10"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Academic Information -->
+            <section class="form-section">
+
+                <div class="section-title">
+                    <span>03</span>
+
+                    <div>
+                        <h2>Academic Information</h2>
+                        <p>Student's educational details</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="studentId">
+                            Student ID <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentId"
+                            placeholder="e.g. STU2026001"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="course">
+                            Course <span>*</span>
+                        </label>
+
+                        <select id="course" required>
+
+                            <option value="">
+                                Select course
+                            </option>
+
+                            <option value="BCA">
+                                BCA
+                            </option>
+
+                            <option value="B.Tech">
+                                B.Tech
+                            </option>
+
+                            <option value="MCA">
+                                MCA
+                            </option>
+
+                            <option value="MBA">
+                                MBA
+                            </option>
+
+                            <option value="BBA">
+                                BBA
+                            </option>
+
+                            <option value="M.Tech">
+                                M.Tech
+                            </option>
+
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="department">
+                            Department <span>*</span>
+                        </label>
+
+                        <select id="department" required>
+
+                            <option value="">
+                                Select department
+                            </option>
+
+                            <option value="Computer Science">
+                                Computer Science
+                            </option>
+
+                            <option value="Information Technology">
+                                Information Technology
+                            </option>
+
+                            <option value="Electronics">
+                                Electronics
+                            </option>
+
+                            <option value="Mechanical">
+                                Mechanical
+                            </option>
+
+                            <option value="Civil">
+                                Civil
+                            </option>
+
+                            <option value="Management">
+                                Management
+                            </option>
+
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="year">
+                            Current Year <span>*</span>
+                        </label>
+
+                        <select id="year" required>
+
+                            <option value="">
+                                Select year
+                            </option>
+
+                            <option value="1st Year">
+                                1st Year
+                            </option>
+
+                            <option value="2nd Year">
+                                2nd Year
+                            </option>
+
+                            <option value="3rd Year">
+                                3rd Year
+                            </option>
+
+                            <option value="4th Year">
+                                4th Year
+                            </option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Address -->
+            <section class="form-section">
+
+                <div class="section-title">
+                    <span>04</span>
+
+                    <div>
+                        <h2>Address</h2>
+                        <p>Student's residential information</p>
+                    </div>
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group full-width">
+
+                        <label for="address">
+                            Address <span>*</span>
+                        </label>
+
+                        <textarea
+                            id="address"
+                            rows="3"
+                            placeholder="Enter complete address"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="city">
+                            City <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Enter city"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="state">
+                            State <span>*</span>
+                        </label>
+
+                        <select id="state" required>
+
+                            <option value="">
+                                Select state
+                            </option>
+
+                            <option value="Uttar Pradesh">
+                                Uttar Pradesh
+                            </option>
+
+                            <option value="Delhi">
+                                Delhi
+                            </option>
+
+                            <option value="Maharashtra">
+                                Maharashtra
+                            </option>
+
+                            <option value="Karnataka">
+                                Karnataka
+                            </option>
+
+                            <option value="Rajasthan">
+                                Rajasthan
+                            </option>
+
+                            <option value="Bihar">
+                                Bihar
+                            </option>
+
+                            <option value="West Bengal">
+                                West Bengal
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="pincode">
+                            PIN Code <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pincode"
+                            maxlength="6"
+                            placeholder="6 digit PIN"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Photo -->
+            <section class="form-section">
+
+                <div class="section-title">
+                    <span>05</span>
+
+                    <div>
+                        <h2>Profile Photo</h2>
+                        <p>Upload student's photograph</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-upload">
+
+                    <div class="photo-preview" id="photoPreview">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <label for="photo" class="upload-button">
+                            Choose Photo
+                        </label>
+
+                        <input
+                            type="file"
+                            id="photo"
+                            accept="image/*"
+                            hidden
+                        >
+
+                        <p class="upload-info">
+                            JPG, PNG or JPEG
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Buttons -->
+            <div class="form-actions">
+
+                <button
+                    type="reset"
+                    class="btn btn-secondary"
+                    id="resetButton"
+                >
+                    Reset
+                </button>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Register Student
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <!-- Stored Students -->
+        <section class="students-section">
+
+            <div class="students-header">
+
+                <div>
+                    <h2>Registered Students</h2>
+                    <p>Students stored in this browser</p>
+                </div>
+
+                <span id="studentCount">
+                    0 Students
+                </span>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Course</th>
+                            <th>Year</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentTableBody">
+
+                        <tr id="emptyRow">
+                            <td colspan="6">
+                                No students registered yet.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
