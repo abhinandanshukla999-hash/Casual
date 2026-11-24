@@ -506,4 +506,24 @@ td {
         flex-direction: column;
     }
 }
-
+#response{
+    color:rgb(5, 133, 254);
+    font-weight:900;
+    justify-content: center;
+    font-display: block;
+}
+#message{
+    text-align: center;
+    justify-content: center;
+    /* display: flex; */
+    padding:20px;
+    margin-bottom: 14px;
+    width:auto
+    
+}
+footer{
+    padding: 20px;
+    border-radius: 10px;
+    /* border-color: #ffad6995; */
+    border:#ffffff;
+}
